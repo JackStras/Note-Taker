@@ -1,2 +1,1 @@
-# Note-Taker
-Note Taker application for challenge 11
+# Note Taker Starter Code
