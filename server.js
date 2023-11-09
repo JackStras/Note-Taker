@@ -21,6 +21,16 @@ app.get('/api/notes', function (req, res) {
     });
 });
 
+app.post('/api/notes', (req, res) => {
+    const { title, text } = req.body
+    const jsonNote = {
+        title: title,
+        text: text,
+        id: uuidv4()
+    }
+})
+
+
 
 
 app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`))
