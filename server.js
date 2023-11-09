@@ -28,6 +28,11 @@ app.post('/api/notes', (req, res) => {
         text: text,
         id: uuidv4()
     }
+    fs.readFile('db/db.json', 'utf8', (err, data) => {
+        const dbData = JSON.parse(data)
+        dbData.push(jsonNote)
+        fs.writeFile('db/db.json', JSON.stringify(jsonNote, null, 4), (error) => error ? console.log(error) : console.log('Success'))
+    })
 })
 
 
