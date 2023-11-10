@@ -41,4 +41,5 @@
 
   My GitHub is [JackStras](https://github.com/JackStras).
   If you have any further questions, you can email me at jackstrasbaugh@yahoo.com.
+  Deployed application: https://jackstras-note-taker-ae74948505e6.herokuapp.com/
 
